@@ -1,0 +1,124 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+  </head>
+
+    <style>
+
+    *{
+      margin: 0px;
+      padding: 0px;
+    }  
+    body
+ 	  {
+ 		background-image: url(ok.jpg);
+ 	  }
+    nav
+    {
+      width: 1250px;
+      height: 90px;
+      background-color: #eb7563;
+      line-height: 75px;
+      padding: 0px 100px;
+      position: fixed;
+      z-index: 1;
+    } 
+    nav .logo{
+      font-size: 30px;
+      letter-spacing: 1.5px;
+      color: whitesmoke;
+      font-family: 'Open Sans', sans-serif;
+    }
+    nav .logo p
+    {
+      float: left;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 25px;
+
+
+    }
+    nav ul
+    {
+      float: right;
+    }
+    nav ul li{
+      display: inline-block;
+      list-style: none;
+    }
+    nav ul li a
+    {
+      color: white;
+      text-decoration: none;
+    
+      padding: 0px 35px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.2vw;
+    }
+     nav ul li a:hover
+    {
+      color:#f0303a;
+    }
+    .wrapper
+ 	  {
+    padding: 10px;   
+    margin: 20px auto;
+ 		width: 800px;
+ 		height: 500px;
+ 		background-color: black;
+     opacity: .6;
+     margin-top: 60px;
+    }
+
+      
+    
+
+
+
+    </style>
+    
+
+
+      <nav>
+        <div class="logo">
+          <p>Welcome!</p>
+        </div>
+        <ul>
+                            	<li><a href="{% url 'homepage' %}">Home</a></li>
+                             <li><a href="{% url 'contact' %}">Contact</a></li>
+					
+        </ul>
+      </nav>
+      <body>
+  
+      <br><br><br>
+      
+      
+      <div class="wrapper"><br>
+          <h2 style="color:white;font-family: 'Open Sans', sans-serif;"><center>ABOUT US..!!</center></h2><br>
+          <h3 style="color:white;font-family: 'Open Sans', sans-serif;font-size: 25px;"><center>Online Placement Practice</center></h3><br><br><br>
+          <h4 style="color:white;font-family: 'Open Sans', sans-serif;font-size: 20px;"><center>This is a platform where you can get 
+            lot of practice questions for your
+            interview and entrance exam preparation</center></h4><br><br>
+            <h5 style="color:white;font-family: 'Open Sans', sans-serif;font-size: 16px;"><center>Our comprehensive feature guarantee an ultimate online preparation for company specific 
+              mock placement tests. Decisive Online test series from test prep Portal where students
+              will be able to get the test series for free to prepare for their placements.
+               Our project aims to aid the students for the process of conducting tests for 
+               practice so that they can perform well in written tests and interviews.</center></h5><br>
+               <h5 style="color:white;font-family: 'Open Sans', sans-serif;font-size: 16px;"><center>Our project includes a basic system for teachers to create test papers for their students
+                and schedule them while also being able to check the results of the students. It also includes
+                 a system for students to keep track of their past exams and also the it will show whether 
+                 the student have attended all the tests or not and results while being aware of their 
+                 future examinations..</center></h5><br><br>
+                 <h3 style="color:white;font-family: 'Open Sans', sans-serif;font-size: 20px;"><center>Thanks for reading..!!</center></h3><br><br><br>
+
+
+          <br>
+
+        </div>
+        
+ </body>
+</html>

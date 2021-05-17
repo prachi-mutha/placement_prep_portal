@@ -1,0 +1,126 @@
+
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>contact</title>
+    </head>
+  
+      <style>
+  
+      *{
+        margin: 0px;
+        padding: 0px;
+      }  
+      body
+       {
+       background-image: url(ok.jpg);
+       }
+      nav
+      {
+        width: 1250px;
+        height: 90px;
+        background-color: #eb7563;
+        line-height: 75px;
+        padding: 0px 100px;
+        position: fixed;
+        z-index: 1;
+      } 
+      nav .logo{
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        color: whitesmoke;
+        font-family: 'Open Sans', sans-serif;
+      }
+      nav .logo p
+      {
+        float: left;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+  
+  
+      }
+      nav ul
+      {
+        float: right;
+      }
+      nav ul li{
+        display: inline-block;
+        list-style: none;
+      }
+      nav ul li a
+      {
+        color: white;
+        text-decoration: none;
+      
+        padding: 0px 35px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2vw;
+      }
+       nav ul li a:hover
+      {
+        color:#f0303a;
+      }
+      .wrapper
+       {
+      padding: 10px;   
+      margin: 20px auto;
+       width: 800px;
+       height: 500px;
+       background-color: black;
+       opacity: .6;
+       margin-top: 60px;
+      }
+  
+        
+      
+  
+  
+  
+      </style>
+      
+  
+  
+        <nav>
+          <div class="logo">
+            <p>Welcome!</p>
+          </div>
+          <ul>
+                                <li><a href="{% url 'homepage' %}">Home</a></li>
+                               <li><a href="{% url 'contact' %}">Contact</a></li>
+            
+          </ul>
+        </nav>
+        <body>
+    
+        <br><br><br>
+        
+        
+        <div class="wrapper"><br>
+            <h2 style="color:white;font-family: 'Open Sans', sans-serif;"><center>CONTACT US..!!</center></h2><br>
+            <h3 style="color:white;font-family: 'Open Sans', sans-serif;font-size: 25px;"><center>Online Placement Practice</center></h3><br><br><br>
+            <h4 style="color:white;font-family: 'Open Sans', sans-serif;font-size: 20px;"><center>Feel free
+               to ask any query..!!</center></h4><br><br><br>
+      
+            <form action="#" method="get">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="padding-left: 20px;padding: 8px;" type="text" name="Name" placeholder="Name" required="">
+              <input style="text-align: center;padding: 8px;" class="email" type="email" name="Email" placeholder="Email" required="">
+              <input style="text-align: center;padding: 8px;" placeholder="Message" name="Message" required="">
+              <input style="text-align: center;padding: 10px;padding-right: 20px;"type="submit" class="btn btn-success" value="SUBMIT">
+            </form>
+            <br>
+
+              <h5 style="color:white;font-family: 'Open Sans', sans-serif;font-size: 14px;"><center>INDORE, INDIA</center></h5><br>
+                 <h5 style="color:white;font-family: 'Open Sans', sans-serif;font-size: 14px;"><center>PHONE NO. - 8989898989</center></h5><br>
+                 <h5 style="color:white;font-family: 'Open Sans', sans-serif;font-size: 14px;"><center>TELEPHONE NO. -07898-78789</center></h5><br>
+                 <h5 style="color:white;font-family: 'Open Sans', sans-serif;font-size: 14px;"><center>EMAIL ADDRESS - examportal@gmail.com</center></h5><br>
+                 <h5 style="color:white;font-family: 'Open Sans', sans-serif;font-size: 14px;"><center>THANKS FOR CONTACTING US </center></h5><br>
+                 <h5 style="color:white;font-family: 'Open Sans', sans-serif;font-size: 14px;"><center>WISH YOU GOOD LUCK! HAVE A GREAT FUTURE AHEAD.</center></h5><br>  
+            <br>
+  
+          </div>
+          
+   </body>
+  </html>
+  

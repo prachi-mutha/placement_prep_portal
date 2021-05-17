@@ -1,0 +1,122 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+</head>
+  <body>
+    <style>
+      *{
+        color: #745959;
+      }
+      .main{
+        padding-left:3%;
+        display: grid;
+        grid-template-columns: 45% auto;
+      }
+      button{
+        margin:1em;
+        margin-left:5em;
+      }
+      img{
+        height:35em;
+        width:45em;
+        transition:all 0.5s ease;
+      }
+      img:hover{
+        height:40em;
+        width:50em;
+        transition:all 0.5s ease;
+      }
+      .prof button[type=submit]:hover{
+        background: #87ff9b;
+      }
+      .student button[type=submit]:hover{
+        background: #a3d5ff;
+     }
+     .pm li
+     {
+       display: inline-block;
+       padding: 15px 30px;
+     }
+    .pm a
+     {
+       text-align: center;
+       color: white;
+       text-decoration: none;
+       font-family: 'Open Sans', sans-serif;
+       font-size: 1.2vw;
+     }
+     .pm a:hover
+     {
+       color: #f0303a;
+       transition: 0.5s;
+       
+     }
+
+
+
+    </style>
+      <nav class="navbar navbar-light" style="background-color:#eb7563">
+        <a class="navbar-brand"  style="color: white; padding-left: 5em;">
+          Welcome!
+        </a>
+        <ul class="pm">
+                            	<li><a href="/about">About</a></li>
+                             <li><a href="/contact">Contact</a></li>
+					
+        </ul>
+
+  
+      </nav>
+      <div class="main">
+        <div class="abt">
+          <br><br>
+          <h1>Online Placement Practice</h1>
+          <h6>This is a platform where you can get lot of practice questions for your
+             interview and entrance exam preparation</h6>
+          <br>
+          <h5>Our comprehensive feature guarantee an ultimate online preparation for company specific 
+            mock placement tests. Decisive Online test series from test prep Portal where students
+            will be able to get the test series for free to prepare for their placements.
+             Our project aims to aid the students for the process of conducting tests for 
+             practice so that they can perform well in written tests and interviews.</h5>
+          <br>
+          <h5>Our project includes a basic system for teachers to create test papers for their students
+             and schedule them while also being able to check the results of the students. It also includes
+              a system for students to keep track of their past exams and also the it will show whether 
+              the student have attended all the tests or not and results while being aware of their 
+              future examinations.</h5>
+          <br><br>
+          <div class="prof">
+            <h2>Professor Section: </h2>
+            <div class="row">
+              <form method="get" action="{% url 'faculty-login' %}">
+                  <button type="submit" class="btn btn-raised btn-lg" style="color: #745959">Login</button>
+              </form>
+              <form method="get" action="{% url 'faculty-register' %}">
+                  <button type="submit" class="btn btn-raised btn-lg" style="color: #745959">Signup</button>
+              </form>
+            </div>
+          </div>
+          <br>
+          <div class="student">
+            <h2>Student Section: </h2>
+            <div class="row">
+              <form method="get" action="{% url 'login' %}">
+                  <button type="submit" class="btn btn-raised btn-lg" style="color: #745959">Login</button>
+              </form>
+              <form method="get" action="{% url 'register' %}">
+                  <button type="submit" class="btn btn-raised btn-lg" style="color: #745959">Signup</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="{% static 'img/about.jpg' %}" alt="">
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+{% extends 'base_faculty.html' %}
+
+{% block body %}
+    <div class="mt-5">
+    </div>
+
+<style>
+*{
+  color: #745959;
+}
+button[type=submit]:hover{
+        background: #87FF9B;
+    }
+#id_questions{
+  display:block;
+  width:100%;
+  height:calc(10em);
+  padding:.375rem .75rem;
+  font-size:1rem;
+  font-weight:400;
+  line-height:1.5;
+  color: #745959;
+  background-color:#fff;
+  background-clip:padding-box;
+  border:1px solid #745959;
+  border-radius:.25rem;
+  transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+</style>
+<div class="row">
+	<div class="col-md-2"></div>
+    <div class="col-md-6">
+
+        <div class="ml-5 card">
+           {% if question_list %}
+           <div class="btn-danger"> QUESTIONS</div>
+            <div class="container">
+
+             <form method="POST" action="{% url 'faculty-viewquestions' %}">
+               {% csrf_token %}
+                 <ol>
+               
+                {% for ques in question_list %}
+
+                <input hidden="hidden" name="delete" value="{{ques.qno}}" ><p>{{ ques.question }}   
+                <input type="submit" name="submit" style="float: right;" value="Delete"  class= "btn btn-success" >
+              </p>
+ 
+                <label for="optionA">{{ ques.optionA }}</label><br>
+                <label for="optionB">{{ ques.optionB }}</label><br>
+                <label for="optionC">{{ ques.optionC }}</label><br>
+                <label for="optionD">{{ ques.optionD }}</label><br>
+                {% endfor %}
+            </ol>
+             </form>
+                </div>
+                 {% else %}
+            <div class="jumbotron text-center bg-success">
+                NO QUESTION EXIST IN DATABASE
+            </div>
+        {% endif %}
+                
+        </div>
+        </div>
+</div>
+
+
+{% endblock %}
